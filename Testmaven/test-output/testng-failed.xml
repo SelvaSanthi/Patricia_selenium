@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Poc_suite]">
+  <test name="test_AddDocument(failed)">
+    <classes>
+      <class name="TestPatrixmaven.TestAddDocument">
+        <methods>
+          <include name="testAddDocument"/>
+        </methods>
+      </class> <!-- TestPatrixmaven.TestAddDocument -->
+    </classes>
+  </test> <!-- test_AddDocument(failed) -->
+  <test name="test_CaseCreation(failed)">
+    <classes>
+      <class name="TestPatrixmaven.TestcaseCreation">
+        <methods>
+          <include name="testBeforeSuite"/>
+          <include name="testCaseCreation"/>
+          <include name="testAfterSuite"/>
+        </methods>
+      </class> <!-- TestPatrixmaven.TestcaseCreation -->
+    </classes>
+  </test> <!-- test_CaseCreation(failed) -->
+</suite> <!-- Failed suite [Poc_suite] -->

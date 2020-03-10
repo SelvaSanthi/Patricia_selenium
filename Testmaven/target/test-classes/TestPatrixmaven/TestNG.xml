@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Poc_suite">
+	<test name="test_AddDocument">
+		<classes>
+			<class name="TestPatrixmaven.TestAddDocument"/>
+		</classes>
+	</test>
+
+
+	<test name="test_CaseCreation">
+		<classes>
+			<class name="TestPatrixmaven.TestcaseCreation"/>
+		</classes>
+	</test>
+
+
+	<test name="test_DocumentPreview">
+		<classes>
+			<class name="TestPatrixmaven.TestDocumentPreview"/>
+		</classes>
+	</test>
+</suite>

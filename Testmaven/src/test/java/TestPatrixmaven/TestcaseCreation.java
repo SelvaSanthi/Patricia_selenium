@@ -1,23 +1,19 @@
 package TestPatrixmaven;
 
 import java.io.IOException;
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import TestPatrixmavenSupport.Log;
 
 public class TestcaseCreation extends CaseCreation{
-	
-	
+		
 	@BeforeClass
 	public void testBeforeClass() throws IOException {
+		
 		before_Suite();
-	}
+	}	
 	
-	
-
 	@Test
 	public void testCaseCreation() {
 		testCaseID = "Patricia_CaseCreation";
@@ -36,18 +32,12 @@ public class TestcaseCreation extends CaseCreation{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		Log.endTestCase("Test_Patricia_CaseCreation");
-
-		
+		Log.endTestCase("Test_Patricia_CaseCreation");		
 	}
-	
-	
+
 	@AfterClass
 	public void testAfterClass() throws InterruptedException {
 		closeDriver();
 	}
-	
-	
-	
-	
+				
 }

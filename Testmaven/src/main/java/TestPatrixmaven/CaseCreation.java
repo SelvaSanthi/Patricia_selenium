@@ -1,7 +1,6 @@
 package TestPatrixmaven;
 
 import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -30,56 +29,49 @@ public class CaseCreation extends webAction {
 	public static WebElement teamSelection;
 	/*@FindBy(xpath="//div[@class='v-button v-widget blue-button v-button-blue-button primary-button v-button-primary-button']") 
 	public static WebElement btncaseCreationOk;*/
-	
-	
+		
 	public void driverUntilWait() {
 		
 		WebDriverWait driverwait=new WebDriverWait(driver, 10);
-		driverwait.until(ExpectedConditions.titleContains("P1"));
+		driverwait.until(ExpectedConditions.titleContains("1"));
 	}
 	
 	public void caseNO() {
 		driverUntilWait();
 		 newCase=driver.getTitle();
+		
 	}
-	
-	
+		
 	public void caseCreation()  {
 		try {
 			driverWait();
 			btnHomepageMenu.click();
 			driverWait();
 			creatCaseOption.click();
-			excelFileReader(5, 1);
 			driverWait();
-			caseTypeSelection.sendKeys(excelCellValue);
-			driverWait();
-			keyboardAction().keyPress(KeyEvent.VK_ENTER);
-			keyboardAction().keyRelease(KeyEvent.VK_ENTER);
-			driverWait();
-			excelFileReader(6, 1);
-			countrySelection.sendKeys(excelCellValue);
+			caseTypeSelection.sendKeys(excelFileReader("Case type"));
 			driverWait();
 			keyboardAction().keyPress(KeyEvent.VK_ENTER);
 			keyboardAction().keyRelease(KeyEvent.VK_ENTER);
 			driverWait();
-			excelFileReader(7, 1);
-			applicationTypeSelection.sendKeys(excelCellValue);
+			countrySelection.sendKeys(excelFileReader("Country"));
 			driverWait();
 			keyboardAction().keyPress(KeyEvent.VK_ENTER);
 			keyboardAction().keyRelease(KeyEvent.VK_ENTER);
 			driverWait();
-			excelFileReader(8, 1);
-			catchwordField.sendKeys(excelCellValue);
-			driverWait();
-			excelFileReader(9, 1);
-			serviceLevelSelection.sendKeys(excelCellValue);
+			applicationTypeSelection.sendKeys(excelFileReader("Application type"));
 			driverWait();
 			keyboardAction().keyPress(KeyEvent.VK_ENTER);
 			keyboardAction().keyRelease(KeyEvent.VK_ENTER);
 			driverWait();
-			excelFileReader(10, 1);
-			teamSelection.sendKeys(excelCellValue);
+			catchwordField.sendKeys(excelFileReader("Catchword"));
+			driverWait();
+			serviceLevelSelection.sendKeys(excelFileReader("Service level"));
+			driverWait();
+			keyboardAction().keyPress(KeyEvent.VK_ENTER);
+			keyboardAction().keyRelease(KeyEvent.VK_ENTER);
+			driverWait();
+			teamSelection.sendKeys(excelFileReader("Team"));
 			driverWait();
 			keyboardAction().keyPress(KeyEvent.VK_ENTER);
 			keyboardAction().keyRelease(KeyEvent.VK_ENTER);
@@ -92,19 +84,15 @@ public class CaseCreation extends webAction {
 			driverUntilWait();
 			caseNO();
 			message = incrementSteps() + " Case Creation - Created Case No : "+newCase; 
-			 
 			
+			excelFileWriter("CaseNo",newCase);
+			
+			 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			Assert.fail("Case not created");
+			Assert.fail("Case Creation Process not completed");
 		}
 	}
 	
-	
-	
-	
-	
-	
-	
-	
+							
 }

@@ -11,10 +11,11 @@ public class Log {
 	public static Logger Log = Logger.getLogger(Log.class.getName());
 	//public static ExtentTest test;
 
-public static void getReport(String message) {
+public static void getReport(String message) throws InterruptedException {
+	Thread.sleep(1000);
 		Log.info(message + "- PASS");
 		webAction.test.log(LogStatus.PASS, message + " -- executed successfully");
-
+		Thread.sleep(2000);
 	}
 	// This is to print log for the beginning of the test case, as we usually run so
 	// many test cases as a test suite
@@ -24,7 +25,7 @@ public static void getReport(String message) {
 
 		Log.info("****************************************************************************************");
 
-		Log.info("$$$$$$$$$$$$$$$$$$$$$                 " + logTestCaseName + "       $$$$$$$$$$$$$$$$$$$$$$$$$");
+		Log.info("$$$$$$$$$$$$$$$$$$$$$        " + logTestCaseName + "       $$$$$$$$$$$$$$$$$$$$$");
 
 		Log.info("****************************************************************************************");
 
@@ -34,12 +35,8 @@ public static void getReport(String message) {
 
 	public static void endTestCase(String sTestCaseName) {
 		ExtentReport.extent.endTest(webAction.test);
-		Log.info("XXXXXXXXXXXXXXXXXXXXXXX             " + "-E---N---D-" + "             XXXXXXXXXXXXXXXXXXXXXX");
-
-		Log.info("X");
-
-		Log.info("X");
-
+		Log.info("XXXXXXXXXXXXXXXXXXXXXXX             " + "-E---N---D-" + "             XXXXXXXXXXXXXXXXXXXXXXX");
+		
 	}
 
 	// Need to create these methods, so that they can be called

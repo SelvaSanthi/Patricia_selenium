@@ -12,16 +12,14 @@ import org.testng.Assert;
 
 public class AddDocument extends webAction {
 	
-
-
 	@FindBy(xpath="//input[@class='gwt-FileUpload']/following::div[@class='v-button']") public static WebElement btnAddDocument;
 	@FindBy(xpath="//span[text()='OK'][@class='v-button-caption']") public static WebElement btnAddDocumentOk;
-
-
 	
 	public void addDocument(String Document_Path) throws InterruptedException, AWTException, IOException {
 		
 		try {
+			documentWidget();
+			driver.navigate().refresh();
 			driverUntilWait(btnAddDocument);
 			btnAddDocument.click();
 			Clipboard copy= Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -32,21 +30,20 @@ public class AddDocument extends webAction {
 			keyboardAction().keyPress(KeyEvent.VK_V);
 			keyboardAction().keyRelease(KeyEvent.VK_V);
 			keyboardAction().keyRelease(KeyEvent.VK_CONTROL);
+			driverWait();
 			keyboardAction().keyPress(KeyEvent.VK_ENTER); 
 			keyboardAction().keyRelease(KeyEvent.VK_ENTER);
 			driverUntilWait(btnAddDocumentOk);
 			btnAddDocumentOk.click();
 			driverWait();
 			driverWait();
-	
-		}catch (Exception e) {
-			e.printStackTrace();
-			Assert.fail("Document not added to the Case");
-			
+			message = incrementSteps() + " Add "+excelFileReader("Document type")+ " document to the Case";
 		}
-		
-		
+		catch (Exception e) {
+			e.printStackTrace();
+			Assert.fail("Document not added to the Case");			
+		}
+				
 	}
-
 	
 }

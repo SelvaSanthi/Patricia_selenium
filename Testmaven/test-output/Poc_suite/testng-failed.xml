@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Poc_suite]">
-  <test name="test_AddDocument(failed)">
-    <classes>
-      <class name="TestPatrixmaven.TestAddDocument">
-        <methods>
-          <include name="testAddDocument"/>
-        </methods>
-      </class> <!-- TestPatrixmaven.TestAddDocument -->
-    </classes>
-  </test> <!-- test_AddDocument(failed) -->
   <test name="test_CaseCreation(failed)">
     <classes>
       <class name="TestPatrixmaven.TestcaseCreation">
         <methods>
-          <include name="testBeforeSuite"/>
+          <include name="getResult"/>
+          <include name="testBeforeClass"/>
           <include name="testCaseCreation"/>
-          <include name="testAfterSuite"/>
+          <include name="testAfterClass"/>
         </methods>
       </class> <!-- TestPatrixmaven.TestcaseCreation -->
     </classes>
   </test> <!-- test_CaseCreation(failed) -->
+  <test name="test_DocumentPreview(failed)">
+    <classes>
+      <class name="TestPatrixmaven.TestDocumentPreview">
+        <methods>
+          <include name="getResult"/>
+          <include name="testAfterClass"/>
+          <include name="testDocumentPreview"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class> <!-- TestPatrixmaven.TestDocumentPreview -->
+    </classes>
+  </test> <!-- test_DocumentPreview(failed) -->
+  <test name="test_SearchforCase(failed)">
+    <classes>
+      <class name="TestPatrixmaven.TestSearchforCase">
+        <methods>
+          <include name="testAfterClass"/>
+          <include name="getResult"/>
+          <include name="testSearchCase"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class> <!-- TestPatrixmaven.TestSearchforCase -->
+    </classes>
+  </test> <!-- test_SearchforCase(failed) -->
 </suite> <!-- Failed suite [Poc_suite] -->

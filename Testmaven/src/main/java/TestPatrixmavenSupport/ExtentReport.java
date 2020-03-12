@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentReport {
@@ -16,9 +15,7 @@ public class ExtentReport {
 	 * @throws IOException
 	 */
 	public void publishReports() throws IOException{
-
 		Date date = new Date();
-
 		File dir1 = new File(".");
 		if (System.getenv("ReportName") != null) {
 			String file = dir1.getCanonicalPath() + File.separator + "src" + File.separator + "reports" + File.separator

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Poc_suite">
+
+	<test name="Patricia_Poc">
+		<classes>
+			<class name="test.TestcaseCreation" />
+			<class name="test.TestAddDocument" />
+			<class name="test.TestDocumentPreview" />
+			<class name="test.TestSearchforNegativeCase" />
+		</classes>
+	</test>
+	
+</suite>

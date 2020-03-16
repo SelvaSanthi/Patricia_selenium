@@ -127,7 +127,7 @@ public class webAction  {
 
 		try {
 
-			if (Browser_lanch.equalsIgnoreCase("Firebox")) {
+			if (Browser_lanch.equalsIgnoreCase("Firefox")) {
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				driver.manage().window().maximize();

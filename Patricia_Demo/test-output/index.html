@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Poc_suite">
+              <span class="suite-name border-failed">Poc_suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\selvamuthukumar.g.ZUCISYSTEMS\AppData\Local\Temp\testng-eclipse-1132964201\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Poc_suite">
+                    <span>C:\Users\selvamuthukumar.g.ZUCISYSTEMS\OneDrive - zucisystems.com\SG\Patricia\Automation Files\Patricia_Demo\src\test\java\test\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Poc_suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Poc_suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Poc_suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Poc_suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Poc_suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Poc_suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Poc_suite" class="hide-methods failed suite-Poc_suite"> (hide)</a> <!-- hide-methods failed suite-Poc_suite -->
+                      <a href="#" panel-name="suite-Poc_suite" class="show-methods failed suite-Poc_suite"> (show)</a> <!-- show-methods failed suite-Poc_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Poc_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Poc_suite" title="test.TestcaseCreation" hash-for-method="testCaseCreation">testCaseCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Poc_suite" title="test.TestSearchforNegativeCase" hash-for-method="testSearchCase">testSearchCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Poc_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Poc_suite" class="hide-methods passed suite-Poc_suite"> (hide)</a> <!-- hide-methods passed suite-Poc_suite -->
+                      <a href="#" panel-name="suite-Poc_suite" class="show-methods passed suite-Poc_suite"> (show)</a> <!-- show-methods passed suite-Poc_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Poc_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestAddDocument" hash-for-method="testAddDocument">testAddDocument</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Poc_suite" title="test.TestAddDocument" hash-for-method="testAddDocument">testAddDocument</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Poc_suite" title="test.TestDocumentPreview" hash-for-method="testDocumentPreview">testDocumentPreview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Poc_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,8 +140,48 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Poc_suite" class="panel Poc_suite">
+          <div class="suite-Poc_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TestSearchforNegativeCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchCase">
+                  </a> <!-- testSearchCase -->
+                  <span class="method-name">testSearchCase</span>
+                  <div class="stack-trace">java.lang.AssertionError: There are No documents available
+	at pages.webAction.documentWidget(webAction.java:236)
+	at test.TestSearchforNegativeCase.testSearchCase(TestSearchforNegativeCase.java:35)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Poc_suite-class-failed -->
+          <div class="suite-Poc_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TestcaseCreation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseCreation">
+                  </a> <!-- testCaseCreation -->
+                  <span class="method-name">testCaseCreation</span>
+                  <div class="stack-trace">java.lang.AssertionError: Case Creation Process not completed
+	at pages.CaseCreation.caseCreation(CaseCreation.java:104)
+	at test.TestcaseCreation.testCaseCreation(TestcaseCreation.java:32)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Poc_suite-class-failed -->
+          <div class="suite-Poc_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">test.TestAddDocument</span>
@@ -131,114 +195,228 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Poc_suite-class-passed -->
+          <div class="suite-Poc_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TestDocumentPreview</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDocumentPreview">
+                  </a> <!-- testDocumentPreview -->
+                  <span class="method-name">testDocumentPreview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Poc_suite-class-passed -->
+        </div> <!-- panel Poc_suite -->
+        <div panel-name="test-xml-Poc_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\selvamuthukumar.g.ZUCISYSTEMS\AppData\Local\Temp\testng-eclipse-1132964201\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\selvamuthukumar.g.ZUCISYSTEMS\OneDrive - zucisystems.com\SG\Patricia\Automation Files\Patricia_Demo\src\test\java\test\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Poc_suite&quot;&gt;
+  &lt;test name=&quot;Patricia_Poc&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;test.TestcaseCreation&quot;/&gt;
       &lt;class name=&quot;test.TestAddDocument&quot;/&gt;
+      &lt;class name=&quot;test.TestDocumentPreview&quot;/&gt;
+      &lt;class name=&quot;test.TestSearchforNegativeCase&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Patricia_Poc --&gt;
+&lt;/suite&gt; &lt;!-- Poc_suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Poc_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Poc_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Patricia_Poc (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Poc_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Poc_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Poc_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Poc_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Poc_suite');
+function tableData_Poc_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testAddDocument')
-data.setCell(0, 2, 'test.TestAddDocument')
-data.setCell(0, 3, 34080);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'testCaseCreation')
+data.setCell(0, 2, 'test.TestcaseCreation')
+data.setCell(0, 3, 47694);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddDocument')
+data.setCell(1, 2, 'test.TestAddDocument')
+data.setCell(1, 3, 35977);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSearchCase')
+data.setCell(2, 2, 'test.TestSearchforNegativeCase')
+data.setCell(2, 3, 29646);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDocumentPreview')
+data.setCell(3, 2, 'test.TestDocumentPreview')
+data.setCell(3, 3, 25173);
+window.suiteTableData['Poc_suite']= { tableData: data, tableDiv: 'times-div-Poc_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Poc_suite">
+              </div> <!-- times-div-Poc_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Poc_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Poc_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Poc_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.TestAddDocument</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">before_suite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.TestSearchforNegativeCase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">before_suite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.TestDocumentPreview</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">before_suite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Poc_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TestAddDocument</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.TestcaseCreation</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">before_suite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">testBeforeClass</span>
-                <span class="method-start">69 ms</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCaseCreation</span>
+                <span class="method-start">13017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testCaseCreation status=FAILURE method=TestcaseCreation.testCaseCreation()[pri:0, i...)</span>
+                <span class="method-start">60713 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAfterClass</span>
+                <span class="method-start">61094 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TestAddDocument</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testBeforeClass</span>
+                <span class="method-start">64274 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testAddDocument</span>
-                <span class="method-start">8305 ms</span>
+                <span class="method-start">76118 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testAddDocument status=SUCCESS method=TestAddDocument.testAddDocument()[pri:0, inst...)</span>
-                <span class="method-start">42386 ms</span>
+                <span class="method-start">112095 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">testAfterClass</span>
-                <span class="method-start">42387 ms</span>
+                <span class="method-start">112095 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TestDocumentPreview</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testBeforeClass</span>
+                <span class="method-start">120655 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testDocumentPreview</span>
+                <span class="method-start">132626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testDocumentPreview status=SUCCESS method=TestDocumentPreview.testDocumentPreview()...)</span>
+                <span class="method-start">157799 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">testAfterClass</span>
+                <span class="method-start">157800 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TestSearchforNegativeCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testBeforeClass</span>
+                <span class="method-start">166279 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSearchCase</span>
+                <span class="method-start">177903 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testSearchCase status=FAILURE method=TestSearchforNegativeCase.testSearchCase()[pri...)</span>
+                <span class="method-start">207551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">testAfterClass</span>
+                <span class="method-start">207922 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

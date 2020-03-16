@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 13 16:27:00 IST 2020</td>
+<td>Started on:</td><td>Mon Mar 16 10:13:16 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>209 seconds (209640 ms)</td>
+<tr><td>Total time:</td><td>216 seconds (216259 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,6 +68,91 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.TestcaseCreation.testAfterClass()'><b>testAfterClass</b><br>Test class: test.TestcaseCreation</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;trish-icon-button-wrap&quot;&gt;...&lt;/span&gt; is not clickable at point (1874, 36). Other element would receive the click: &lt;div class=&quot;v-window-modalitycurtain&quot; style=&quot;z-index: 10001;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=80.0.3987.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ZS-DSK-0014&apos;, ip: &apos;192.168.0.226&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SELVAM~1.ZUC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f9265d1e525dd9842b331f92e4230c91
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at pages.webAction.closeDriver(webAction.java:113)
+	at test.TestcaseCreation.testAfterClass(TestcaseCreation.java:43)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1758893871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1758893871'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;trish-icon-button-wrap&quot;&gt;...&lt;/span&gt; is not clickable at point (1874, 36). Other element would receive the click: &lt;div class=&quot;v-window-modalitycurtain&quot; style=&quot;z-index: 10001;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=80.0.3987.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ZS-DSK-0014&apos;, ip: &apos;192.168.0.226&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SELVAM~1.ZUC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f9265d1e525dd9842b331f92e4230c91
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at pages.webAction.closeDriver(webAction.java:113)
+	at test.TestcaseCreation.testAfterClass(TestcaseCreation.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>3</td>
+<td>test.TestcaseCreation@47ef968d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -75,17 +160,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestAddDocument.testAddDocument()'><b>testAddDocument</b><br>Test class: test.TestAddDocument</td>
-<td><div><pre>java.lang.AssertionError: There are No documents available
-	at pages.webAction.documentWidget(webAction.java:236)
-	at pages.AddDocument.addDocument(AddDocument.java:25)
-	at test.TestAddDocument.testAddDocument(TestAddDocument.java:36)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1120670624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1120670624'><pre>java.lang.AssertionError: There are No documents available
+<td title='test.TestcaseCreation.testCaseCreation()'><b>testCaseCreation</b><br>Test class: test.TestcaseCreation</td>
+<td><div><pre>java.lang.AssertionError: Case Creation Process not completed
+	at pages.CaseCreation.caseCreation(CaseCreation.java:104)
+	at test.TestcaseCreation.testCaseCreation(TestcaseCreation.java:32)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace103787801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103787801'><pre>java.lang.AssertionError: Case Creation Process not completed
 	at org.testng.Assert.fail(Assert.java:93)
-	at pages.webAction.documentWidget(webAction.java:236)
-	at pages.AddDocument.addDocument(AddDocument.java:25)
-	at test.TestAddDocument.testAddDocument(TestAddDocument.java:36)
+	at pages.CaseCreation.caseCreation(CaseCreation.java:104)
+	at test.TestcaseCreation.testCaseCreation(TestcaseCreation.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -112,15 +195,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>25</td>
-<td>test.TestAddDocument@23e028a9</td></tr>
+<td>47</td>
+<td>test.TestcaseCreation@47ef968d</td></tr>
 <tr>
 <td title='test.TestSearchforNegativeCase.testSearchCase()'><b>testSearchCase</b><br>Test class: test.TestSearchforNegativeCase</td>
 <td><div><pre>java.lang.AssertionError: There are No documents available
 	at pages.webAction.documentWidget(webAction.java:236)
 	at test.TestSearchforNegativeCase.testSearchCase(TestSearchforNegativeCase.java:35)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1047873000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1047873000'><pre>java.lang.AssertionError: There are No documents available
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace169049466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace169049466'><pre>java.lang.AssertionError: There are No documents available
 	at org.testng.Assert.fail(Assert.java:93)
 	at pages.webAction.documentWidget(webAction.java:236)
 	at test.TestSearchforNegativeCase.testSearchCase(TestSearchforNegativeCase.java:35)
@@ -161,14 +244,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestcaseCreation.testCaseCreation()'><b>testCaseCreation</b><br>Test class: test.TestcaseCreation</td>
+<td title='test.TestAddDocument.testAddDocument()'><b>testAddDocument</b><br>Test class: test.TestAddDocument</td>
 <td></td>
-<td>46</td>
-<td>test.TestcaseCreation@47ef968d</td></tr>
+<td>35</td>
+<td>test.TestAddDocument@23e028a9</td></tr>
 <tr>
 <td title='test.TestDocumentPreview.testDocumentPreview()'><b>testDocumentPreview</b><br>Test class: test.TestDocumentPreview</td>
 <td></td>
-<td>24</td>
+<td>25</td>
 <td>test.TestDocumentPreview@3dd4520b</td></tr>
 </table><p>
 </body>

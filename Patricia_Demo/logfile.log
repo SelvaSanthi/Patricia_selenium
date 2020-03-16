@@ -3251,3 +3251,32 @@
 2020-03-13 16:42:24,239 INFO  [Log] **************************************************************************************** 
 2020-03-13 16:42:25,253 INFO  [Log] Step No: 1 Initialize elements- PASS 
 2020-03-13 16:42:28,411 INFO  [Log] Step No: 2 Login to Patricia- PASS 
+2020-03-16 10:13:29,910 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:13:29,921 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$        Test_Patricia_CaseCreation       $$$$$$$$$$$$$$$$$$$$$ 
+2020-03-16 10:13:29,921 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:13:30,936 INFO  [Log] Step No: 1 Initialize elements- PASS 
+2020-03-16 10:13:34,081 INFO  [Log] Step No: 2 Login to Patricia- PASS 
+2020-03-16 10:14:17,569 ERROR [Log] Step No: 2 Login to Patricia 
+2020-03-16 10:14:32,959 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:14:32,959 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$        Test_Patricia_Add Document       $$$$$$$$$$$$$$$$$$$$$ 
+2020-03-16 10:14:32,959 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:14:33,960 INFO  [Log] Step No: 1 Initialize elements- PASS 
+2020-03-16 10:14:37,093 INFO  [Log] Step No: 2 Login to Patricia- PASS 
+2020-03-16 10:14:46,254 INFO  [Log] Step No: 3 Search for Case No: C1000FR00- PASS 
+2020-03-16 10:15:06,930 INFO  [Log] Step No: 4 Add TXT document to the Case- PASS 
+2020-03-16 10:15:08,934 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXXX 
+2020-03-16 10:15:29,467 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:15:29,467 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$        Test_Patricia_Document_Preview       $$$$$$$$$$$$$$$$$$$$$ 
+2020-03-16 10:15:29,468 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:15:30,469 INFO  [Log] Step No: 1 Initialize elements- PASS 
+2020-03-16 10:15:33,610 INFO  [Log] Step No: 2 Login to Patricia- PASS 
+2020-03-16 10:15:42,748 INFO  [Log] Step No: 3 Search for Case No: TM1193A200- PASS 
+2020-03-16 10:15:52,638 INFO  [Log] Step No: 4 Preview the Document- PASS 
+2020-03-16 10:15:54,639 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXXX 
+2020-03-16 10:16:14,744 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:16:14,744 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$        Test_Patricia_Search for Case       $$$$$$$$$$$$$$$$$$$$$ 
+2020-03-16 10:16:14,744 INFO  [Log] **************************************************************************************** 
+2020-03-16 10:16:15,745 INFO  [Log] Step No: 1 Initialize elements- PASS 
+2020-03-16 10:16:18,895 INFO  [Log] Step No: 2 Login to Patricia- PASS 
+2020-03-16 10:16:32,058 INFO  [Log] Step No: 4 No Results found for Case No: @0000000- PASS 
+2020-03-16 10:16:44,392 ERROR [Log] Step No: 5 Navigate to the document widget 

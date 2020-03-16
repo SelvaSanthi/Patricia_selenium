@@ -3,15 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Poc_suite]">
   <test name="Patricia_Poc(failed)">
     <classes>
-      <class name="test.TestAddDocument">
-        <methods>
-          <include name="testAfterClass"/>
-          <include name="getResult"/>
-          <include name="before_suite"/>
-          <include name="testBeforeClass"/>
-          <include name="testAddDocument"/>
-        </methods>
-      </class> <!-- test.TestAddDocument -->
       <class name="test.TestSearchforNegativeCase">
         <methods>
           <include name="getResult"/>
@@ -21,6 +12,15 @@
           <include name="testAfterClass"/>
         </methods>
       </class> <!-- test.TestSearchforNegativeCase -->
+      <class name="test.TestcaseCreation">
+        <methods>
+          <include name="testCaseCreation"/>
+          <include name="getResult"/>
+          <include name="testAfterClass"/>
+          <include name="before_suite"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class> <!-- test.TestcaseCreation -->
     </classes>
   </test> <!-- Patricia_Poc(failed) -->
 </suite> <!-- Failed suite [Poc_suite] -->

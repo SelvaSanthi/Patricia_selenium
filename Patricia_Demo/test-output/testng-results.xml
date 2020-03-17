@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="3" total="7" passed="2">
+<testng-results skipped="0" failed="1" ignored="3" total="7" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Poc_suite" duration-ms="216259" started-at="2020-03-16T04:43:16Z" finished-at="2020-03-16T04:46:53Z">
+  <suite name="Poc_suite" duration-ms="213858" started-at="2020-03-17T03:43:20Z" finished-at="2020-03-17T03:46:54Z">
     <groups>
     </groups>
-    <test name="Patricia_Poc" duration-ms="216259" started-at="2020-03-16T04:43:16Z" finished-at="2020-03-16T04:46:53Z">
+    <test name="Patricia_Poc" duration-ms="213858" started-at="2020-03-17T03:43:20Z" finished-at="2020-03-17T03:46:54Z">
       <class name="test.TestSearchforNegativeCase">
-        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestSearchforNegativeCase@5ae63ade]" name="testBeforeClass" is-config="true" duration-ms="11624" started-at="2020-03-16T10:16:03Z" finished-at="2020-03-16T10:16:14Z">
+        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestSearchforNegativeCase@6e0e048a]" name="testBeforeClass" is-config="true" duration-ms="11947" started-at="2020-03-17T09:16:04Z" finished-at="2020-03-17T09:16:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeClass -->
-        <test-method status="FAIL" signature="testSearchCase()[pri:0, instance:test.TestSearchforNegativeCase@5ae63ade]" name="testSearchCase" duration-ms="29646" started-at="2020-03-16T10:16:14Z" finished-at="2020-03-16T10:16:44Z">
+        <test-method status="FAIL" signature="testSearchCase()[pri:0, instance:test.TestSearchforNegativeCase@6e0e048a]" name="testSearchCase" duration-ms="29622" started-at="2020-03-17T09:16:16Z" finished-at="2020-03-17T09:16:45Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[There are No documents available]]>
@@ -52,203 +52,100 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchCase -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestSearchforNegativeCase@5ae63ade]" name="getResult" is-config="true" duration-ms="371" started-at="2020-03-16T10:16:44Z" finished-at="2020-03-16T10:16:44Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestSearchforNegativeCase@6e0e048a]" name="getResult" is-config="true" duration-ms="443" started-at="2020-03-17T09:16:45Z" finished-at="2020-03-17T09:16:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSearchCase status=FAILURE method=TestSearchforNegativeCase.testSearchCase()[pri:0, instance:test.TestSearchforNegativeCase@5ae63ade] output={null}]]]>
+                <![CDATA[[TestResult name=testSearchCase status=FAILURE method=TestSearchforNegativeCase.testSearchCase()[pri:0, instance:test.TestSearchforNegativeCase@6e0e048a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="testAfterClass()[pri:0, instance:test.TestSearchforNegativeCase@5ae63ade]" name="testAfterClass" is-config="true" duration-ms="8454" started-at="2020-03-16T10:16:44Z" finished-at="2020-03-16T10:16:53Z">
+        <test-method status="PASS" signature="testAfterClass()[pri:0, instance:test.TestSearchforNegativeCase@6e0e048a]" name="testAfterClass" is-config="true" duration-ms="8432" started-at="2020-03-17T09:16:46Z" finished-at="2020-03-17T09:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAfterClass -->
       </class> <!-- test.TestSearchforNegativeCase -->
       <class name="test.TestcaseCreation">
-        <test-method status="PASS" signature="before_suite()[pri:0, instance:test.TestcaseCreation@47ef968d]" name="before_suite" is-config="true" duration-ms="117" started-at="2020-03-16T10:13:16Z" finished-at="2020-03-16T10:13:16Z">
+        <test-method status="PASS" signature="before_suite()[pri:0, instance:test.TestcaseCreation@887af79]" name="before_suite" is-config="true" duration-ms="61" started-at="2020-03-17T09:13:20Z" finished-at="2020-03-17T09:13:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_suite -->
-        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestcaseCreation@47ef968d]" name="testBeforeClass" is-config="true" duration-ms="12890" started-at="2020-03-16T10:13:16Z" finished-at="2020-03-16T10:13:29Z">
+        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestcaseCreation@887af79]" name="testBeforeClass" is-config="true" duration-ms="12513" started-at="2020-03-17T09:13:20Z" finished-at="2020-03-17T09:13:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeClass -->
-        <test-method status="FAIL" signature="testCaseCreation()[pri:0, instance:test.TestcaseCreation@47ef968d]" name="testCaseCreation" duration-ms="47694" started-at="2020-03-16T10:13:29Z" finished-at="2020-03-16T10:14:17Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Case Creation Process not completed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Case Creation Process not completed
-	at org.testng.Assert.fail(Assert.java:93)
-	at pages.CaseCreation.caseCreation(CaseCreation.java:104)
-	at test.TestcaseCreation.testCaseCreation(TestcaseCreation.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="testCaseCreation()[pri:0, instance:test.TestcaseCreation@887af79]" name="testCaseCreation" duration-ms="45194" started-at="2020-03-17T09:13:33Z" finished-at="2020-03-17T09:14:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseCreation -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestcaseCreation@47ef968d]" name="getResult" is-config="true" duration-ms="381" started-at="2020-03-16T10:14:17Z" finished-at="2020-03-16T10:14:17Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestcaseCreation@887af79]" name="getResult" is-config="true" duration-ms="1" started-at="2020-03-17T09:14:18Z" finished-at="2020-03-17T09:14:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCaseCreation status=FAILURE method=TestcaseCreation.testCaseCreation()[pri:0, instance:test.TestcaseCreation@47ef968d] output={null}]]]>
+                <![CDATA[[TestResult name=testCaseCreation status=SUCCESS method=TestcaseCreation.testCaseCreation()[pri:0, instance:test.TestcaseCreation@887af79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="testAfterClass()[pri:0, instance:test.TestcaseCreation@47ef968d]" name="testAfterClass" is-config="true" duration-ms="3178" started-at="2020-03-16T10:14:17Z" finished-at="2020-03-16T10:14:21Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="trish-icon-button-wrap">...</span> is not clickable at point (1874, 36). Other element would receive the click: <div class="v-window-modalitycurtain" style="z-index: 10001;"></div>
-  (Session info: chrome=80.0.3987.132)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ZS-DSK-0014', ip: '192.168.0.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SELVAM~1.ZUC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f9265d1e525dd9842b331f92e4230c91]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="trish-icon-button-wrap">...</span> is not clickable at point (1874, 36). Other element would receive the click: <div class="v-window-modalitycurtain" style="z-index: 10001;"></div>
-  (Session info: chrome=80.0.3987.132)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ZS-DSK-0014', ip: '192.168.0.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SELVAM~1.ZUC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f9265d1e525dd9842b331f92e4230c91
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at pages.webAction.closeDriver(webAction.java:113)
-	at test.TestcaseCreation.testAfterClass(TestcaseCreation.java:43)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="testAfterClass()[pri:0, instance:test.TestcaseCreation@887af79]" name="testAfterClass" is-config="true" duration-ms="8626" started-at="2020-03-17T09:14:18Z" finished-at="2020-03-17T09:14:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAfterClass -->
       </class> <!-- test.TestcaseCreation -->
       <class name="test.TestDocumentPreview">
-        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestDocumentPreview@3dd4520b]" name="testBeforeClass" is-config="true" duration-ms="11971" started-at="2020-03-16T10:15:17Z" finished-at="2020-03-16T10:15:29Z">
+        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestDocumentPreview@5b87ed94]" name="testBeforeClass" is-config="true" duration-ms="11606" started-at="2020-03-17T09:15:19Z" finished-at="2020-03-17T09:15:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeClass -->
-        <test-method status="PASS" signature="testDocumentPreview()[pri:0, instance:test.TestDocumentPreview@3dd4520b]" name="testDocumentPreview" duration-ms="25173" started-at="2020-03-16T10:15:29Z" finished-at="2020-03-16T10:15:54Z">
+        <test-method status="PASS" signature="testDocumentPreview()[pri:0, instance:test.TestDocumentPreview@5b87ed94]" name="testDocumentPreview" duration-ms="24696" started-at="2020-03-17T09:15:31Z" finished-at="2020-03-17T09:15:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDocumentPreview -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestDocumentPreview@3dd4520b]" name="getResult" is-config="true" duration-ms="1" started-at="2020-03-16T10:15:54Z" finished-at="2020-03-16T10:15:54Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestDocumentPreview@5b87ed94]" name="getResult" is-config="true" duration-ms="1" started-at="2020-03-17T09:15:55Z" finished-at="2020-03-17T09:15:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testDocumentPreview status=SUCCESS method=TestDocumentPreview.testDocumentPreview()[pri:0, instance:test.TestDocumentPreview@3dd4520b] output={null}]]]>
+                <![CDATA[[TestResult name=testDocumentPreview status=SUCCESS method=TestDocumentPreview.testDocumentPreview()[pri:0, instance:test.TestDocumentPreview@5b87ed94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="testAfterClass()[pri:0, instance:test.TestDocumentPreview@3dd4520b]" name="testAfterClass" is-config="true" duration-ms="8479" started-at="2020-03-16T10:15:54Z" finished-at="2020-03-16T10:16:03Z">
+        <test-method status="PASS" signature="testAfterClass()[pri:0, instance:test.TestDocumentPreview@5b87ed94]" name="testAfterClass" is-config="true" duration-ms="8456" started-at="2020-03-17T09:15:55Z" finished-at="2020-03-17T09:16:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAfterClass -->
       </class> <!-- test.TestDocumentPreview -->
       <class name="test.TestAddDocument">
-        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestAddDocument@23e028a9]" name="testBeforeClass" is-config="true" duration-ms="11844" started-at="2020-03-16T10:14:21Z" finished-at="2020-03-16T10:14:32Z">
+        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestAddDocument@7fac631b]" name="testBeforeClass" is-config="true" duration-ms="11806" started-at="2020-03-17T09:14:27Z" finished-at="2020-03-17T09:14:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeClass -->
-        <test-method status="PASS" signature="testAddDocument()[pri:0, instance:test.TestAddDocument@23e028a9]" name="testAddDocument" duration-ms="35977" started-at="2020-03-16T10:14:32Z" finished-at="2020-03-16T10:15:08Z">
+        <test-method status="PASS" signature="testAddDocument()[pri:0, instance:test.TestAddDocument@7fac631b]" name="testAddDocument" duration-ms="32081" started-at="2020-03-17T09:14:38Z" finished-at="2020-03-17T09:15:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddDocument -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestAddDocument@23e028a9]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-16T10:15:08Z" finished-at="2020-03-16T10:15:08Z">
+        <test-method status="PASS" signature="testAfterClass()[pri:0, instance:test.TestAddDocument@7fac631b]" name="testAfterClass" is-config="true" duration-ms="8421" started-at="2020-03-17T09:15:11Z" finished-at="2020-03-17T09:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterClass -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestAddDocument@7fac631b]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-17T09:15:11Z" finished-at="2020-03-17T09:15:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAddDocument status=SUCCESS method=TestAddDocument.testAddDocument()[pri:0, instance:test.TestAddDocument@23e028a9] output={null}]]]>
+                <![CDATA[[TestResult name=testAddDocument status=SUCCESS method=TestAddDocument.testAddDocument()[pri:0, instance:test.TestAddDocument@7fac631b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="testAfterClass()[pri:0, instance:test.TestAddDocument@23e028a9]" name="testAfterClass" is-config="true" duration-ms="8560" started-at="2020-03-16T10:15:08Z" finished-at="2020-03-16T10:15:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAfterClass -->
       </class> <!-- test.TestAddDocument -->
     </test> <!-- Patricia_Poc -->
   </suite> <!-- Poc_suite -->

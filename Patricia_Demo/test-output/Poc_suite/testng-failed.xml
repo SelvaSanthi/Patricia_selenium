@@ -12,15 +12,6 @@
           <include name="testAfterClass"/>
         </methods>
       </class> <!-- test.TestSearchforNegativeCase -->
-      <class name="test.TestcaseCreation">
-        <methods>
-          <include name="testCaseCreation"/>
-          <include name="getResult"/>
-          <include name="testAfterClass"/>
-          <include name="before_suite"/>
-          <include name="testBeforeClass"/>
-        </methods>
-      </class> <!-- test.TestcaseCreation -->
     </classes>
   </test> <!-- Patricia_Poc(failed) -->
 </suite> <!-- Failed suite [Poc_suite] -->

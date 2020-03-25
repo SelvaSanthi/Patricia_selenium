@@ -1,0 +1,373 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">1</td>
+		<td class="failed" id="features_failed">1</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">2</td>
+		<td id="features_rate">
+				50%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">3</td>
+		<td class="failed" id="scenarios_failed">2</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">5</td>
+		<td id="scenarios_rate">
+				60%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">29</td>
+		<td class="failed" id="steps_failed">2</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">1</td>
+		<td id="steps_total">32</td>
+		<td id="steps_rate">
+				91%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 02m 47s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="failed"><a href="#feature-1login-to-the-application-and-search-for-a-product">Login to the application and Search for a product</a></span>
+	<ol>
+        <li> <span class="failed"><a href="#sc-13-login-to-the-application-and-search-for-a-product;login-to-the-flipkart-application;;2">Login to the flipkart application</a></span></li>
+        <li> <span class="passed"><a href="#sc-24-login-to-the-application-and-search-for-a-product;search-for-a-product;;2">Search for a product</a></span></li>
+        <li> <span class="failed"><a href="#sc-25-login-to-the-application-and-search-for-a-product;search-for-a-product;;3">Search for a product</a></span></li>
+    </ol></li>
+<li> <span class="passed"><a href="#feature-1search-for-a-product-and-add-to-wishlist-or-remove-from-wishlist">Search for a product and add to wishlist or remove from wishlist</a></span>
+	<ol>
+        <li> <span class="passed"><a href="#sc-18-search-for-a-product-and-add-to-wishlist-or-remove-from-wishlist;search-for-a-product-and-add-to-wishlist;;2">Search for a product and add to wishlist</a></span></li>
+        <li> <span class="passed"><a href="#sc-30-search-for-a-product-and-add-to-wishlist-or-remove-from-wishlist;search-for-a-product-and-remove-from-wishlist;;2">Search for a product and remove from wishlist</a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-1login-to-the-application-and-search-for-a-product">Login to the application and Search for a product</a></td></tr>
+    <tr class="failed">
+    	<td><small><b>Passed:</b> 1</small></td>
+        <td><small><b>Failed:</b> 2</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 63.74s</small></td>
+    </tr>
+	<tr class="failed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-13-login-to-the-application-and-search-for-a-product;login-to-the-flipkart-application;;2">Login to the flipkart application</a>
+					</td>
+				</tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 3</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 22.74s</small></td>
+				</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>When </b> Launch flipkart application</td>
+                            		<td width="100">11.58s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;8144855487&quot; and &quot;Selva@2000&quot;</td>
+                            		<td width="100">2.29s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User should be successfully navigated to Homepage</td>
+                            		<td width="100">8.87s</td>
+                        		</tr>
+                            	<tr class="failed">
+                            		<td><b>And </b> Logout from the application</td>
+                            		<td width="100">0.01s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?</br><br>Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:17:03&#39;</br><br>System info: host: &#39;ZS-DSK-0014&#39;, ip: &#39;192.168.0.226&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_231&#39;</br><br>Driver info: driver.version: RemoteWebDriver</br><br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)</br><br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)</br><br>	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)</br><br>	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)</br><br>	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)</br><br>	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)</br><br>	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)</br><br>	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)</br><br>	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)</br><br>	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)</br><br>	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)</br><br>	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)</br><br>	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)</br><br>	at flipkartPages.WebActions.waitUntil(WebActions.java:65)</br><br>	at flipkartPages.WebActions.finalsetup(WebActions.java:243)</br><br>	at flipkartStepDef.loginAndsearchStepDef.logout_from_the_application(loginAndsearchStepDef.java:30)</br><br>	at ✽.Logout from the application(file:///C:/Users/selvamuthukumar.g.ZUCISYSTEMS/OneDrive%20-%20zucisystems.com/SG/Eclipse%20Automation/Mariner/src/test/java/flipkartFeatureFile/applicationLoginAndsearch.feature:9)</br><br></br>
+										</td>
+									</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-24-login-to-the-application-and-search-for-a-product;search-for-a-product;;2">Search for a product</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 6</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 17.36s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>When </b> Launch flipkart application</td>
+                            		<td width="100">10.91s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;8144855487&quot; and &quot;Selva@2000&quot;</td>
+                            		<td width="100">2.28s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User should be successfully navigated to Homepage</td>
+                            		<td width="100">0.06s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;Mobilephone&quot; to search</td>
+                            		<td width="100">2.16s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> Product should be successfully searched</td>
+                            		<td width="100">1.09s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Logout from the application</td>
+                            		<td width="100">0.87s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-25-login-to-the-application-and-search-for-a-product;search-for-a-product;;3">Search for a product</a>
+					</td>
+				</tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 4</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 1</small></td>
+					<td><small>Duration: 23.64s</small></td>
+				</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>When </b> Launch flipkart application</td>
+                            		<td width="100">10.90s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;8144855487&quot; and &quot;Selva@2000&quot;</td>
+                            		<td width="100">2.25s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User should be successfully navigated to Homepage</td>
+                            		<td width="100">0.06s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;noresult&quot; to search</td>
+                            		<td width="100">2.15s</td>
+                        		</tr>
+                            	<tr class="failed">
+                            		<td><b>Then </b> Product should be successfully searched</td>
+                            		<td width="100">8.28s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>junit.framework.AssertionFailedError: No search result found</br><br>	at junit.framework.Assert.fail(Assert.java:57)</br><br>	at flipkartPages.WebActions.validateSearch(WebActions.java:134)</br><br>	at flipkartStepDef.loginAndsearchStepDef.product_should_be_successfully_searched(loginAndsearchStepDef.java:41)</br><br>	at ✽.Product should be successfully searched(file:///C:/Users/selvamuthukumar.g.ZUCISYSTEMS/OneDrive%20-%20zucisystems.com/SG/Eclipse%20Automation/Mariner/src/test/java/flipkartFeatureFile/applicationLoginAndsearch.feature:19)</br><br></br>
+										</td>
+									</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Logout from the application</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+	<tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-1search-for-a-product-and-add-to-wishlist-or-remove-from-wishlist">Search for a product and add to wishlist or remove from wishlist</a></td></tr>
+    <tr class="passed">
+    	<td><small><b>Passed:</b> 2</small></td>
+        <td><small><b>Failed:</b> 0</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 44.03s</small></td>
+    </tr>
+	<tr class="passed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-18-search-for-a-product-and-add-to-wishlist-or-remove-from-wishlist;search-for-a-product-and-add-to-wishlist;;2">Search for a product and add to wishlist</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 9</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 26.8s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>When </b> Launch flipkart application</td>
+                            		<td width="100">11.24s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;8144855487&quot; and &quot;Selva@2000&quot;</td>
+                            		<td width="100">2.25s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User should be successfully navigated to Homepage</td>
+                            		<td width="100">0.09s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;Mobilephone&quot; to search</td>
+                            		<td width="100">2.17s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> Product should be successfully searched</td>
+                            		<td width="100">1.09s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Click on the product in the search result to view details</td>
+                            		<td width="100">2.13s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Add the the product to the wishlist</td>
+                            		<td width="100">4.21s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> Product should be successfully added to wishlist</td>
+                            		<td width="100">2.79s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Logout from the application</td>
+                            		<td width="100">0.85s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-30-search-for-a-product-and-add-to-wishlist-or-remove-from-wishlist;search-for-a-product-and-remove-from-wishlist;;2">Search for a product and remove from wishlist</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 7</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 17.23s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>When </b> Launch flipkart application</td>
+                            		<td width="100">10.74s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Enter &quot;8144855487&quot; and &quot;Selva@2000&quot;</td>
+                            		<td width="100">2.35s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User should be successfully navigated to Homepage</td>
+                            		<td width="100">0.06s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> Navigate to userprofile and click on wishlist</td>
+                            		<td width="100">0.22s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on the product from the wishlist to remove</td>
+                            		<td width="100">0.67s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> Product should be successfuly removed from the wishlist</td>
+                            		<td width="100">2.29s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Logout from the application</td>
+                            		<td width="100">0.89s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>

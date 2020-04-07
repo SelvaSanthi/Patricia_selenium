@@ -1,0 +1,483 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Results Overview Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Results Overview Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview Chart</h1>
+	<table class="chart">
+	<tr>
+	<th class="chart">Features Status</th><th class="chart">Scenario Status</th>
+	</tr>
+	<tr class="chart">
+    <td class="chart">
+<div id="feature_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M152,120 L154,60 A90,60,0,0,1,206.90067271,71.45898034 M206.90067271,71.45898034 L152,120"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M152,120 L206.90067271,71.45898034 A90,60,0,0,1,239.59508647,101.45898034 M239.59508647,101.45898034 L152,120"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M152,120 L239.59508647,101.45898034 A90,60,0,0,1,239.59508647,138.54101966 M239.59508647,138.54101966 L152,120"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M152,120 L239.59508647,138.54101966 A90,60,0,0,1,206.90067271,168.54101966 M206.90067271,168.54101966 L152,120"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M152,120 L206.90067271,168.54101966 A90,60,0,0,1,154,180 M154,180 L152,120"></path>
+
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,120 L150,180 A90,60,0,0,1,97.09932729,168.54101966 M97.09932729,168.54101966 L150,120"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,120 L97.09932729,168.54101966 A90,60,0,0,1,64.40491353,138.54101966 M64.40491353,138.54101966 L150,120"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,120 L64.40491353,138.54101966 A90,60,0,0,1,64.40491353,101.45898034 M64.40491353,101.45898034 L150,120"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,120 L64.40491353,101.45898034 A90,60,0,0,1,97.09932729,71.45898034 M97.09932729,71.45898034 L150,120"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,120 L97.09932729,71.45898034 A90,60,0,0,1,150,60 M150,60 L150,120"></path>
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M152,120 L154,60 L154,40 L152,100 L152,120 "></path>
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M150,120 L148,180 L148,160 L150,100 L150,120 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M152,120 L154,180 L154,160 L152,100 L152,120 "></path>
+
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M148,120 L146,60 L146,40 L148,100 L148,120 "></path>
+
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="goldenrod" stroke-width="1" stroke="goldenrod"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M152,100 L154,40 A90,60,0,0,1,206.90067271,51.45898034 M206.90067271,51.45898034 L152,100"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M152,100 L206.90067271,51.45898034 A90,60,0,0,1,239.59508647,81.45898034 M239.59508647,81.45898034 L152,100"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M152,100 L239.59508647,81.45898034 A90,60,0,0,1,239.59508647,118.54101966 M239.59508647,118.54101966 L152,100"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M152,100 L239.59508647,118.54101966 A90,60,0,0,1,206.90067271,148.54101966 M206.90067271,148.54101966 L152,100"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M152,100 L206.90067271,148.54101966 A90,60,0,0,1,154,160 M154,160 L152,100"></path>
+
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,100 L150,160 A90,60,0,0,1,97.09932729,148.54101966 M97.09932729,148.54101966 L150,100"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,100 L97.09932729,148.54101966 A90,60,0,0,1,64.40491353,118.54101966 M64.40491353,118.54101966 L150,100"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,100 L64.40491353,118.54101966 A90,60,0,0,1,64.40491353,81.45898034 M64.40491353,81.45898034 L150,100"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,100 L64.40491353,81.45898034 A90,60,0,0,1,97.09932729,51.45898034 M97.09932729,51.45898034 L150,100"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,100 L97.09932729,51.45898034 A90,60,0,0,1,150,40 M150,40 L150,100"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">50% (1) Passed</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">50% (1) Failed</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="darkred" stroke-width="1" fill="red" />
+			            <text x="280"
+			            	 y="127.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Undefined</text>
+			           <circle cx="270"
+			            cy="122.5"
+			             r="5" stroke="darkgray" stroke-width="1" fill="silver" />
+			            <text x="280"
+			            	 y="157.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Known</text>
+			           <circle cx="270"
+			            cy="152.5"
+			             r="5" stroke="goldenrod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+    <td class="chart">
+<div id="scenario_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.73205081,121 L153.46410162,62 A90,60,0,0,1,220.34713591,81.85216362 M220.34713591,81.85216362 L151.73205081,121"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.73205081,121 L220.34713591,81.85216362 A90,60,0,0,1,242.9710722,128.2717078 M242.9710722,128.2717078 L151.73205081,121"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.73205081,121 L242.9710722,128.2717078 A90,60,0,0,1,206.36477432,170.54101966 M206.36477432,170.54101966 L151.73205081,121"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.73205081,121 L206.36477432,170.54101966 A90,60,0,0,1,134.75204944,180.68885604 M134.75204944,180.68885604 L151.73205081,121"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.73205081,121 L134.75204944,180.68885604 A90,60,0,0,1,75.52181527,152 M75.52181527,152 L151.73205081,121"></path>
+
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.26794919,119 L68.59361204,148 A90,60,0,0,1,57.0289278,124.2717078 M57.0289278,124.2717078 L148.26794919,119"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.26794919,119 L57.0289278,124.2717078 A90,60,0,0,1,60.94081192,99.45898034 M60.94081192,99.45898034 L148.26794919,119"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.26794919,119 L60.94081192,99.45898034 A90,60,0,0,1,79.65286409,77.85216362 M79.65286409,77.85216362 L148.26794919,119"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.26794919,119 L79.65286409,77.85216362 A90,60,0,0,1,109.92960051,63.18727254 M109.92960051,63.18727254 L148.26794919,119"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.26794919,119 L109.92960051,63.18727254 A90,60,0,0,1,146.53589838,58 M146.53589838,58 L148.26794919,119"></path>
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M151.73205081,121 L153.46410162,62 L153.46410162,42 L151.73205081,101 L151.73205081,121 "></path>
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M148.26794919,119 L68.59361204,148 L68.59361204,128 L148.26794919,99 L148.26794919,119 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M151.73205081,121 L75.52181527,152 L75.52181527,132 L151.73205081,101 L151.73205081,121 "></path>
+
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M148.26794919,119 L146.53589838,58 L146.53589838,38 L148.26794919,99 L148.26794919,119 "></path>
+
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="goldenrod" stroke-width="1" stroke="goldenrod"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.73205081,101 L153.46410162,42 A90,60,0,0,1,220.34713591,61.85216362 M220.34713591,61.85216362 L151.73205081,101"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.73205081,101 L220.34713591,61.85216362 A90,60,0,0,1,242.9710722,108.2717078 M242.9710722,108.2717078 L151.73205081,101"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.73205081,101 L242.9710722,108.2717078 A90,60,0,0,1,206.36477432,150.54101966 M206.36477432,150.54101966 L151.73205081,101"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.73205081,101 L206.36477432,150.54101966 A90,60,0,0,1,134.75204944,160.68885604 M134.75204944,160.68885604 L151.73205081,101"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.73205081,101 L134.75204944,160.68885604 A90,60,0,0,1,75.52181527,132 M75.52181527,132 L151.73205081,101"></path>
+
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.26794919,99 L68.59361204,128 A90,60,0,0,1,57.0289278,104.2717078 M57.0289278,104.2717078 L148.26794919,99"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.26794919,99 L57.0289278,104.2717078 A90,60,0,0,1,60.94081192,79.45898034 M60.94081192,79.45898034 L148.26794919,99"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.26794919,99 L60.94081192,79.45898034 A90,60,0,0,1,79.65286409,57.85216362 M79.65286409,57.85216362 L148.26794919,99"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.26794919,99 L79.65286409,57.85216362 A90,60,0,0,1,109.92960051,43.18727254 M109.92960051,43.18727254 L148.26794919,99"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.26794919,99 L109.92960051,43.18727254 A90,60,0,0,1,146.53589838,38 M146.53589838,38 L148.26794919,99"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">67% (4) Passed</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">33% (2) Failed</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="darkred" stroke-width="1" fill="red" />
+			            <text x="280"
+			            	 y="127.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Undefined</text>
+			           <circle cx="270"
+			            cy="122.5"
+			             r="5" stroke="darkgray" stroke-width="1" fill="silver" />
+			            <text x="280"
+			            	 y="157.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Known</text>
+			           <circle cx="270"
+			            cy="152.5"
+			             r="5" stroke="goldenrod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+	</tr>
+	</table>
+
+<h1>Summary</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">1</td>
+		<td class="failed" id="features_failed">1</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">2</td>
+		<td id="features_rate">
+				50%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">4</td>
+		<td class="failed" id="scenarios_failed">2</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">6</td>
+		<td id="scenarios_rate">
+				67%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">35</td>
+		<td class="failed" id="steps_failed">2</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">1</td>
+		<td id="steps_total">38</td>
+		<td id="steps_rate">
+				92%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 03m 51s</b></div>
+	
+<h1>Features Status</h1>
+	
+<table>
+	<tr>
+		<th>Feature Name</th>
+		<th>Status</th>
+		<th>Passed</th>
+		<th>Failed</th>
+		<th>Known</th>
+		<th>Undefined</th>
+		<th>Total</th>
+		<th>Duration</th>
+	</tr>
+	<tr class="failed">
+		<td>Login to the application and Search for a product</td>
+		<td>failed</td>
+		<td>2</td>
+		<td>2</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>106.24s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Search for a product and add to wishlist or remove from wishlist</td>
+		<td>passed</td>
+		<td>2</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>2</td>
+		<td>65.42s</td>
+	</tr>	
+
+</table>
+	
+<h1>Scenario Status</h1>
+
+<table>
+	<tr>
+		<th>Feature Name</th>
+		<th>Scenario</th>
+		<th>Status</th>
+		<th>Passed</th>
+		<th>Failed</th>
+		<th>Known</th>
+		<th>Undefined</th>
+		<th>Total</th>
+		<th>Retries</th>
+		<th>Duration</th>
+	</tr>
+	<tr class="passed">
+		<td>Login to the application and Search for a product</td>
+		<td>Login to the flipkart application</td>
+		<td>passed</td>
+		<td>4</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>0</td>
+		<td>20.31s</td>
+	</tr>	
+	<tr class="failed">
+		<td>Login to the application and Search for a product</td>
+		<td>Search for a product</td>
+		<td>failed</td>
+		<td>5</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>30.74s</td>
+	</tr>	
+	<tr class="failed">
+		<td>Login to the application and Search for a product</td>
+		<td>Search for a product</td>
+		<td>failed</td>
+		<td>4</td>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+		<td>6</td>
+		<td>0</td>
+		<td>28.43s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Login to the application and Search for a product</td>
+		<td>Search for a product</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>26.76s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Search for a product and add to wishlist or remove from wishlist</td>
+		<td>Search for a product and add to wishlist</td>
+		<td>passed</td>
+		<td>9</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>9</td>
+		<td>0</td>
+		<td>32.28s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Search for a product and add to wishlist or remove from wishlist</td>
+		<td>Search for a product and remove from wishlist</td>
+		<td>passed</td>
+		<td>7</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>7</td>
+		<td>0</td>
+		<td>33.15s</td>
+	</tr>	
+</table>	
+	</body>
+</html>

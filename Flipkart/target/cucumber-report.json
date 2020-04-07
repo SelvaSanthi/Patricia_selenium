@@ -1,0 +1,282 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13217000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch flipkart application",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.launch_flipkart_application()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-31T11:50:18.278Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Search for a product",
+        "description": "",
+        "id": "login-to-the-application-and-search-for-a-product;search-for-a-product;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2390000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter \"8144855487\" and \"Selva@2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8144855487\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Selva@2000\"",
+                  "offset": 23
+                }
+              ],
+              "location": "flipkartStepDef.LoginAndSearchStepDef.enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be successfully navigated to Homepage",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.user_should_be_successfully_navigated_to_Homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2239000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Enter \"Mobilephone\" to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mobilephone\"",
+                  "offset": 6
+                }
+              ],
+              "location": "flipkartStepDef.LoginAndSearchStepDef.enter_to_search(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1146000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Product should be successfully searched",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.product_should_be_successfully_searched()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2958000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Logout from the application",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.logout_from_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11527000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch flipkart application",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.launch_flipkart_application()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-31T11:50:40.560Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Search for a product",
+        "description": "",
+        "id": "login-to-the-application-and-search-for-a-product;search-for-a-product;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 3357000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2552000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter \"8144855487\" and \"Selva@2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8144855487\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Selva@2000\"",
+                  "offset": 23
+                }
+              ],
+              "location": "flipkartStepDef.LoginAndSearchStepDef.enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be successfully navigated to Homepage",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.user_should_be_successfully_navigated_to_Homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2248000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Enter \"noresult\" to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"noresult\"",
+                  "offset": 6
+                }
+              ],
+              "location": "flipkartStepDef.LoginAndSearchStepDef.enter_to_search(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: No search result found\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat flipkartPages.FlipkartProduct.validateSearch(FlipkartProduct.java:232)\r\n\tat flipkartStepDef.LoginAndSearchStepDef.product_should_be_successfully_searched(LoginAndSearchStepDef.java:51)\r\n\tat ✽.Product should be successfully searched(file:///C:/Users/selvamuthukumar.g.ZUCISYSTEMS/OneDrive%20-%20zucisystems.com/SG/M_Poc/Mariner/src/test/java/flipkartFeatureFile/ApplicationLoginAndsearch.feature:20)\r\n",
+              "duration": 8453000000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "Product should be successfully searched",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.product_should_be_successfully_searched()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Logout from the application",
+            "match": {
+              "location": "flipkartStepDef.LoginAndSearchStepDef.logout_from_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login to the application and Search for a product",
+    "description": "",
+    "id": "login-to-the-application-and-search-for-a-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/flipkartFeatureFile/ApplicationLoginAndsearch.feature",
+    "tags": []
+  }
+]

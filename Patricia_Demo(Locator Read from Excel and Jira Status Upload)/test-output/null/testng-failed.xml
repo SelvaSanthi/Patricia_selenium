@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [null]">
+  <test name="null(failed)">
+    <parameter name="Add_Device" value="Yes"/>
+    <parameter name="Add_Document" value="Yes"/>
+    <parameter name="Case_Type" value="Patent"/>
+    <classes>
+      <class name="test.TestcaseCreation">
+        <methods>
+          <include name="testCaseCreation" invocation-numbers="0"/>
+          <include name="getResult"/>
+          <include name="testAfterClass"/>
+          <include name="before_suite"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class> <!-- test.TestcaseCreation -->
+    </classes>
+  </test> <!-- null(failed) -->
+</suite> <!-- Failed suite [null] -->

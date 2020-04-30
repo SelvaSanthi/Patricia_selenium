@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="false">
+    <classes>
+      <class name="test.TestMandatoryFields">
+        <methods>
+          <include name="testBeforeClass"/>
+          <include name="before_suite"/>
+          <include name="testmandatoryfields"/>
+        </methods>
+      </class>
+      <class name="test.TestSearchforNegativeCase">
+        <methods>
+          <include name="testBeforeClass"/>
+          <include name="getResult"/>
+          <include name="testSearchCase"/>
+        </methods>
+      </class>
+      <class name="test.TestAddDocument">
+        <methods>
+          <include name="testAfterClass"/>
+          <include name="getResult"/>
+          <include name="testBeforeClass"/>
+          <include name="testAddDocument"/>
+        </methods>
+      </class>
+      <class name="test.TestPartiesInvalid">
+        <methods>
+          <include name="testpartiesinvalid"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class>
+      <class name="test.TestcaseCreation">
+        <methods>
+          <include name="testCaseCreation"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class>
+      <class name="test.TestDocumentPreview">
+        <methods>
+          <include name="testDocumentPreview"/>
+          <include name="getResult"/>
+          <include name="testAfterClass"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

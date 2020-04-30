@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Poc_suite]">
+  <test name="Patricia_Poc3(failed)">
+    <parameter name="Add_Device" value="No"/>
+    <parameter name="Add_Document" value="No"/>
+    <parameter name="Case_Type" value="Trademark"/>
+    <classes>
+      <class name="test.TestcaseCreation">
+        <methods>
+          <include name="testCaseCreation" invocation-numbers="0"/>
+          <include name="getResult"/>
+          <include name="testAfterClass"/>
+          <include name="before_suite"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class> <!-- test.TestcaseCreation -->
+    </classes>
+  </test> <!-- Patricia_Poc3(failed) -->
+</suite> <!-- Failed suite [Poc_suite] -->

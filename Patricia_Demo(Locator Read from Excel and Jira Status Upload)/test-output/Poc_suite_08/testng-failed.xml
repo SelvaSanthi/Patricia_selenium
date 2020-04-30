@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Poc_suite_08]">
+  <test name="Poc_test_08(failed)">
+    <parameter name="Party_value" value="valid_value"/>
+    <classes>
+      <class name="test.TestPartiesInvalid">
+        <methods>
+          <include name="getResult"/>
+          <include name="before_suite"/>
+          <include name="testAfterClass"/>
+          <include name="testpartiesinvalid" invocation-numbers="0"/>
+          <include name="testBeforeClass"/>
+        </methods>
+      </class> <!-- test.TestPartiesInvalid -->
+    </classes>
+  </test> <!-- Poc_test_08(failed) -->
+</suite> <!-- Failed suite [Poc_suite_08] -->

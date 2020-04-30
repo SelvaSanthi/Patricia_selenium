@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Poc_suite_07]">
+  <test name="Poc_test_07(failed)">
+    <parameter name="Mandatory_fields" value="Ser_fields"/>
+    <classes>
+      <class name="test.TestMandatoryFields">
+        <methods>
+          <include name="getResult"/>
+          <include name="testBeforeClass"/>
+          <include name="before_suite"/>
+          <include name="testAfterClass"/>
+          <include name="testmandatoryfields" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.TestMandatoryFields -->
+    </classes>
+  </test> <!-- Poc_test_07(failed) -->
+</suite> <!-- Failed suite [Poc_suite_07] -->

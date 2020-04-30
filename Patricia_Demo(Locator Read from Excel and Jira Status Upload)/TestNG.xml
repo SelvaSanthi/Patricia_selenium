@@ -1,0 +1,11 @@
+<suite name="Main Test Suite" verbose="2">
+    <test name="Test Patricia">
+<parameter name="Case_Type" value="Trademark" />
+      <parameter name="Add_Document" value="No" />
+       <parameter name="Add_Device" value="No" /> 
+       <!-- <parameter name="Mandatory_fields" value="All_fields" />  -->
+        <classes>
+        <class name="test.TestcaseCreation"/>
+        </classes>
+    </test>
+</suite>

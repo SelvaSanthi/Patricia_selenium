@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="124069" started-at="2020-04-27T12:32:07Z" finished-at="2020-04-27T12:34:11Z">
+    <groups>
+    </groups>
+    <test name="Command line test 40373e50-3c60-49fe-89a4-549bfb5df4aa" duration-ms="55937" started-at="2020-04-27T12:32:07Z" finished-at="2020-04-27T12:33:03Z">
+      <class name="test.TestcaseCreation">
+        <test-method status="PASS" signature="testBeforeClass()[pri:0, instance:test.TestcaseCreation@13e39c73]" name="testBeforeClass" is-config="true" duration-ms="40257" started-at="2020-04-27T18:02:07Z" finished-at="2020-04-27T18:02:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeClass -->
+        <test-method status="FAIL" signature="testCaseCreation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TestcaseCreation@13e39c73]" name="testCaseCreation" duration-ms="3055" started-at="2020-04-27T18:02:48Z" finished-at="2020-04-27T18:02:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Trademark]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ Could not login to the application]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  Could not login to the application
+	at org.testng.Assert.fail(Assert.java:93)
+	at pages.webAction.loginToPatricia(webAction.java:214)
+	at test.TestcaseCreation.testCaseCreation(TestcaseCreation.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at test.PatriciaTestNGXML.xml(PatriciaTestNGXML.java:146)
+	at test.PatriciaTestNGXML.main(PatriciaTestNGXML.java:153)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseCreation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.TestcaseCreation@13e39c73]" name="getResult" is-config="true" duration-ms="322" started-at="2020-04-27T18:02:51Z" finished-at="2020-04-27T18:02:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCaseCreation status=FAILURE method=TestcaseCreation.testCaseCreation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TestcaseCreation@13e39c73] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="testAfterClass()[pri:0, instance:test.TestcaseCreation@13e39c73]" name="testAfterClass" is-config="true" duration-ms="12292" started-at="2020-04-27T18:02:51Z" finished-at="2020-04-27T18:03:03Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='v-slot v-slot-logout v-align-middle']/child::div/child::span' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='v-slot v-slot-logout v-align-middle']/child::div/child::span' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.webAction.driverUntilWait(webAction.java:323)
+	at pages.webAction.closeDriver(webAction.java:146)
+	at test.TestcaseCreation.testAfterClass(TestcaseCreation.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at test.PatriciaTestNGXML.xml(PatriciaTestNGXML.java:146)
+	at test.PatriciaTestNGXML.main(PatriciaTestNGXML.java:153)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='v-slot v-slot-logout v-align-middle']/child::div/child::span"}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ZS-DSK-0014', ip: '192.168.0.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\SELVAM~1.ZUC\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7bce40066e4127ea3c95847058d6f0c6
+*** Element info: {Using=xpath, value=//div[@class='v-slot v-slot-logout v-align-middle']/child::div/child::span}
+	at sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterClass -->
+      </class> <!-- test.TestcaseCreation -->
+    </test> <!-- Command line test 40373e50-3c60-49fe-89a4-549bfb5df4aa -->
+    <test name="Command line test d503011b-cbda-40ae-b13f-eec8951ee2d9" duration-ms="67983" started-at="2020-04-27T12:33:03Z" finished-at="2020-04-27T12:34:11Z">
+      <class name="test.TestAddDocument">
+        <test-method status="PASS" signature="before_suite()[pri:0, instance:test.TestAddDocument@72f926e6]" name="before_suite" is-config="true" duration-ms="75" started-at="2020-04-27T18:02:07Z" finished-at="2020-04-27T18:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_suite -->
+        <test-method status="FAIL" signature="testBeforeClass()[pri:0, instance:test.TestAddDocument@72f926e6]" name="testBeforeClass" is-config="true" duration-ms="67982" started-at="2020-04-27T18:03:03Z" finished-at="2020-04-27T18:04:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ Could not navigate to the Application Login page]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  Could not navigate to the Application Login page
+	at org.testng.Assert.fail(Assert.java:93)
+	at pages.webAction.getUrl(webAction.java:189)
+	at pages.webAction.before_Class(webAction.java:123)
+	at test.TestAddDocument.testBeforeClass(TestAddDocument.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at test.PatriciaTestNGXML.xml(PatriciaTestNGXML.java:146)
+	at test.PatriciaTestNGXML.main(PatriciaTestNGXML.java:153)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeClass -->
+        <test-method status="SKIP" signature="testAddDocument()[pri:0, instance:test.TestAddDocument@72f926e6]" name="testAddDocument" duration-ms="1" started-at="2020-04-27T18:04:11Z" finished-at="2020-04-27T18:04:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ Could not navigate to the Application Login page]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  Could not navigate to the Application Login page
+	at org.testng.Assert.fail(Assert.java:93)
+	at pages.webAction.getUrl(webAction.java:189)
+	at pages.webAction.before_Class(webAction.java:123)
+	at test.TestAddDocument.testBeforeClass(TestAddDocument.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at test.PatriciaTestNGXML.xml(PatriciaTestNGXML.java:146)
+	at test.PatriciaTestNGXML.main(PatriciaTestNGXML.java:153)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddDocument -->
+        <test-method status="SKIP" signature="testAfterClass()[pri:0, instance:test.TestAddDocument@72f926e6]" name="testAfterClass" is-config="true" duration-ms="0" started-at="2020-04-27T18:04:11Z" finished-at="2020-04-27T18:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterClass -->
+      </class> <!-- test.TestAddDocument -->
+    </test> <!-- Command line test d503011b-cbda-40ae-b13f-eec8951ee2d9 -->
+  </suite> <!-- Default Suite -->
+</testng-results>

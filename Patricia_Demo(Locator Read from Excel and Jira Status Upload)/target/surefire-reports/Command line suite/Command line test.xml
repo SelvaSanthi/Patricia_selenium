@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ZS-DSK-0014" name="test.TestAddDocument" tests="6" failures="2" timestamp="23 Apr 2020 05:12:17 GMT" time="132.177" errors="0">
+  <testcase name="@BeforeClass testBeforeClass" time="0.0" classname="test.TestMandatoryFields">
+    <failure type="java.lang.AssertionError" message="Could not open the browser">
+      <![CDATA[java.lang.AssertionError: Could not open the browser
+	at pages.webAction.launchDriver(webAction.java:176)
+	at pages.webAction.before_Class(webAction.java:117)
+	at test.TestMandatoryFields.testBeforeClass(TestMandatoryFields.java:19)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass testAfterClass" time="0.0" classname="test.TestMandatoryFields">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeClass testBeforeClass" time="0.0" classname="test.TestPartiesInvalid">
+    <failure type="java.lang.AssertionError" message="Could not open the browser">
+      <![CDATA[java.lang.AssertionError: Could not open the browser
+	at pages.webAction.launchDriver(webAction.java:176)
+	at pages.webAction.before_Class(webAction.java:117)
+	at test.TestPartiesInvalid.testBeforeClass(TestPartiesInvalid.java:20)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass testAfterClass" time="0.0" classname="test.TestPartiesInvalid">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeClass testBeforeClass" time="0.0" classname="test.TestSearchforNegativeCase">
+    <failure type="java.lang.AssertionError" message="Could not open the browser">
+      <![CDATA[java.lang.AssertionError: Could not open the browser
+	at pages.webAction.launchDriver(webAction.java:176)
+	at pages.webAction.before_Class(webAction.java:117)
+	at test.TestSearchforNegativeCase.testBeforeClass(TestSearchforNegativeCase.java:15)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass testAfterClass" time="0.0" classname="test.TestSearchforNegativeCase">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeClass testBeforeClass" time="0.0" classname="test.TestcaseCreation">
+    <failure type="java.lang.AssertionError" message="Could not open the browser">
+      <![CDATA[java.lang.AssertionError: Could not open the browser
+	at pages.webAction.launchDriver(webAction.java:176)
+	at pages.webAction.before_Class(webAction.java:117)
+	at test.TestcaseCreation.testBeforeClass(TestcaseCreation.java:16)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass testAfterClass" time="0.0" classname="test.TestcaseCreation">
+    <skipped/>
+  </testcase>
+  <testcase name="testAddDocument" time="10.88" classname="test.TestAddDocument">
+    <failure type="java.lang.AssertionError" message="No Results found">
+      <![CDATA[java.lang.AssertionError: No Results found
+	at pages.webAction.searchForCase(webAction.java:257)
+	at test.TestAddDocument.testAddDocument(TestAddDocument.java:33)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testDocumentPreview" time="10.214" classname="test.TestDocumentPreview">
+    <failure type="java.lang.AssertionError" message="No Results found">
+      <![CDATA[java.lang.AssertionError: No Results found
+	at pages.webAction.searchForCase(webAction.java:257)
+	at test.TestDocumentPreview.testDocumentPreview(TestDocumentPreview.java:33)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testmandatoryfields" time="0.001" classname="test.TestMandatoryFields">
+    <skipped/>
+  </testcase>
+  <testcase name="testpartiesinvalid" time="0.0" classname="test.TestPartiesInvalid">
+    <skipped/>
+  </testcase>
+  <testcase name="testSearchCase" time="0.0" classname="test.TestSearchforNegativeCase">
+    <skipped/>
+  </testcase>
+  <testcase name="testCaseCreation" time="0.0" classname="test.TestcaseCreation">
+    <skipped/>
+  </testcase>
+</testsuite>
